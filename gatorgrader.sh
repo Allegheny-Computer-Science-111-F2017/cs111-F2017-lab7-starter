@@ -181,7 +181,7 @@ if [ "$CHECK" = true ]; then
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
                                      --checkfiles GeometricCalculator.java --fragments "new Date()" --fragmentcounts 0
   determine_exit_code $?
-# --> GatorGrader CHECK: there are no "println()" fragment exists in the code
+  # --> GatorGrader CHECK: there are no "println()" fragment exists in the code
   python3 gatorgrader/gatorgrader.py --nowelcome --directories src/main/java/labseven \
                                      --checkfiles GeometricCalculator.java --fragments "println(" --fragmentcounts 0
   determine_exit_code $?
